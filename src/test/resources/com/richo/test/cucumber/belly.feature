@@ -1,5 +1,6 @@
 Feature: Belly
 
+  @Important
   Scenario: Eating cukes until full
     Given I have a belly
     When I eat 20 cukes
