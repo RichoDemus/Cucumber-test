@@ -6,6 +6,7 @@ package com.richo.test.cucumber.car;
 public class Volvo
 {
 	private boolean locked = false;
+
 	public void lock()
 	{
 		locked = true;

@@ -17,17 +17,20 @@ public class Stepdefs
 	}
 
 	@When("^I eat (\\d+) cukes$")
-	public void i_eat_cukes(int arg1) throws Throwable {
+	public void i_eat_cukes(int arg1) throws Throwable
+	{
 		belly.eat(arg1);
 	}
 
 	@Then("^my belly should be full$")
-	public void my_belly_should_be_full() throws Throwable {
+	public void my_belly_should_be_full() throws Throwable
+	{
 		Assert.assertTrue(belly.isFull());
 	}
 
 	@Then("^my belly should not be full$")
-	public void my_belly_should_not_be_full() throws Throwable {
+	public void my_belly_should_not_be_full() throws Throwable
+	{
 		Assert.assertFalse(belly.isFull());
 	}
 }

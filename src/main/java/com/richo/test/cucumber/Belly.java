@@ -1,12 +1,16 @@
 package com.richo.test.cucumber;
 
-public class Belly {
+public class Belly
+{
 	int cukesEaten = 0;
-	public void eat(int cukes) {
+
+	public void eat(int cukes)
+	{
 		cukesEaten += cukes;
 	}
 
-	public boolean isFull() {
+	public boolean isFull()
+	{
 		return cukesEaten > 10;
 	}
 }
